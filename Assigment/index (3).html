@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <!-- Arithmetical operator -->
+    <script>
+        let a=2+2;
+        let b=3-2;
+        let c=4*3;
+        let d=4/2;
+    </script>
+    <!-- modulus -->
+    <script>
+        let x=7;
+        let y=3;
+        let z=x%y;
+    </script>
+    <!-- increment -->
+    <script>
+        var e=4;
+        e++;
+        var f = e
+    </script>
+    <!-- Conditional operator -->
+   
+<p>Input your age and click the button:</p>
+
+<input id="age" value="20" />
+
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+  let beneficiary = (age < 20) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = beneficiary + " to register.";
+}
+</script>
+<!-- null -->
+<p id="demo"></p>
+
+<script>
+let name = null;
+let text = "missing";
+let result = name ?? text;
+document.getElementById("demo").innerHTML = "The phone is " + result; 
+</script>
+<!-- logical -->
+<p id="demo"></p>
+<script>
+    let u = 9;
+    let k = 5;
+    
+    document.getElementById("demo").innerHTML = 
+    (u < 10 && k > 1) + "<br>" + 
+    (u < 10 && k < 1);
+    </script>
+
+    <!-- Assignment operator -->
+    <p id="demo"></p>
+
+<!-- <script>
+var j = 5;
+document.getElementById("demo").innerHTML = (j == 8);
+</script> -->
+<script>
+    var s = 10
+    var t = 6
+    if (s > t) {
+        console.log(true)
+    }else{console.log(false)
+
+    }
+</script>
+
+
+</body>
+</html>
