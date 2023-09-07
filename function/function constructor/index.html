@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function constructor</title>
+</head>
+<body>
+    <!-- <script>
+        var func = new Function("x","y", document.write("supreme"));
+    </script> -->
+    <!-- <script>
+        var addition = new Function("a","b", "return a+b");
+         var performaddict = new Function("return addition(5,5)")   
+        document.write(performaddict())
+    </script> -->
+
+    <!-- <script>
+        var fun = () =>{
+            return("hello")
+        }
+        document.write(fun())
+    </script> -->
+    
+    <!-- <script>
+        var fun = (a,b) =>{
+            function be(a){
+                return a*b
+            }
+            result = Math.sqrt(be(a) * be(b));
+        return (result)
+        }
+        function score(){
+            return fun(5,6)
+        }
+        document.write(score())
+       
+    </script> -->
+
+    <script>
+        var hello = (x,y) =>{
+        function square(x){
+            return x*x
+        }
+        var ade = Math.sqrt(square(x)+square(y))
+        return ade 
+        }
+        var final = new Function("return hello(4,3)")
+    </script>
+    <button onclick="document.write(final())">click me</button>
+    
+</body>
+</html>

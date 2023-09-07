@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTED FUNCTION</title>
+</head>
+<body>
+    <script>
+        function draw(a,b){
+            function cow(x){
+            return x*x
+        }
+        result = Math.sqrt(cow(a) * cow(b));
+        return (result)
+        
+        }
+        function score(){
+            return draw(5,7)
+        }
+        document.write(score())
+    </script>
+    
+</body>
+</html>
